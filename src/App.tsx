@@ -54,9 +54,9 @@ function App() {
     <Container>
       <Contents>
         <ToDoListContainer data-testid="toDoList">
-          {toDoList.map((item, index) => 
+          {toDoList.map((item, index) => (
             <ToDoItem key={item} label={item} onDelete={() => deleteToDo(index)} />
-          )}
+          ))}
         </ToDoListContainer>
         <InputContainer>
           <Input placeholder="할 일을 입력해 주세요" value={toDo} onChange={(text) => setToDo(text)} />

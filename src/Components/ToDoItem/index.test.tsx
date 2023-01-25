@@ -22,5 +22,5 @@ describe('<ToDoItem />', () => {
     expect(handleClick).toHaveBeenCalledTimes(0);
     fireEvent.click(deleteButton);
     expect(handleClick).toHaveBeenCalledTimes(1);
-  })
+  });
 });

@@ -27,26 +27,4 @@ describe('<Input />', () => {
     fireEvent.change(input, { target: { value: 'study react' } });
     expect(input.value).toBe('study react');
   });
-
-  // it('changes backgroundColor and hoverColor Props', () => {
-  //   const backgroundColor = '#ff1744';
-  //   const hoverColor = '#f01440';
-  //   render(<Button label="Button Test" backgroundColor={backgroundColor} hoverColor={hoverColor} />);
-
-  //   const parent = screen.getByText('Button Test').parentElement;
-  //   expect(parent).toHaveStyleRule('background-color', backgroundColor);
-  //   expect(parent).toHaveStyleRule('background-color', hoverColor, {
-  //     modifier: ':hover',
-  //   });
-  // });
-
-  // it('clicks the button', () => {
-  //   const handleClick = jest.fn();
-  //   render(<Button label="Button Test" onClick={handleClick} />);
-
-  //   const label = screen.getByText('Button Test');
-  //   expect(handleClick).toHaveBeenCalledTimes(0);
-  //   fireEvent.click(label);
-  //   expect(handleClick).toHaveBeenCalledTimes(1);
-  // });
 });
